@@ -23,7 +23,7 @@ const Chat = ({ name }: { name: string }) => {
 
         try {
             const res = await axios.post(
-                `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${import.meta.env.VITE_GEMINI_KEY}`,
+                `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAQLimlsurSd0WmyW69d4ruczPKqm3bzKk`,
                 {
                     contents: [
                         {
