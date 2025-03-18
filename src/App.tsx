@@ -6,7 +6,7 @@ const App = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [name, setName] = useState('')
   return (
-    <div className='w-full h-screen bg-gradient-to-b from-[#fde6ff] via-white to-[#fde6ff]'>
+    <div className='w-full min-h-screen bg-gradient-to-b from-[#fde6ff] via-white to-[#fde6ff]'>
       {isSubmitted && <Chat name={name} />}
 
       {/* Asking Name */}
