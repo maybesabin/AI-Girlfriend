@@ -23,7 +23,7 @@ const Chat = ({ name }: { name: string }) => {
 
         try {
             const res = await axios.post(
-                `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAQLimlsurSd0WmyW69d4ruczPKqm3bzKk`,
+                `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${import.meta.env.VITE_GEMINI_KEY}`,
                 {
                     contents: [
                         {
@@ -55,8 +55,8 @@ const Chat = ({ name }: { name: string }) => {
     };
 
     return (
-        <div className="w-full min-h-svh flex items-center justify-center">
-            <div className="h-full md:w-[25rem] w-full flex flex-col items-start gap-9 p-4">
+        <div className="w-full h-[100svh] flex items-center justify-center">
+            <div className="h-full md:w-[35rem] w-full flex flex-col items-start gap-9 p-4">
 
                 {/* Header */}
                 <div className="flex items-center gap-2">
